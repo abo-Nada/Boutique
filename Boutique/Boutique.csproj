@@ -167,6 +167,16 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BusinessLogic\Managers\billDetailsManager.cs" />
+    <Compile Include="BusinessLogic\Managers\billManager.cs" />
+    <Compile Include="BusinessLogic\Managers\categoryManager.cs" />
+    <Compile Include="BusinessLogic\Managers\productImgManager.cs" />
+    <Compile Include="BusinessLogic\Managers\productManager.cs" />
+    <Compile Include="BusinessLogic\Managers\productSizeManager.cs" />
+    <Compile Include="BusinessLogic\Managers\typeManager.cs" />
+    <Compile Include="BusinessLogic\Repository\IRepository.cs" />
+    <Compile Include="BusinessLogic\Repository\Repository.cs" />
+    <Compile Include="BusinessLogic\UnitOfWork.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
