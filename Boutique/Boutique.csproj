@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.8</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -202,16 +204,194 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\all.min.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\10.jpeg" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\110.jpg" />
+    <Content Include="images\22.jpg" />
+    <Content Include="images\33.jpg" />
+    <Content Include="images\44.jpg" />
+    <Content Include="images\46230542_2393754950666980_6388007552008847360_n.jpg" />
+    <Content Include="images\48180386_363001417809088_5020541160972615680_n.jpg" />
+    <Content Include="images\48281520_755437968123835_7369141712079290368_n.jpg" />
+    <Content Include="images\52602548_1229280113916660_2780404043216846848_o.jpg" />
+    <Content Include="images\55.jpg" />
+    <Content Include="images\66.jpeg" />
+    <Content Include="images\77.jpeg" />
+    <Content Include="images\88.jpeg" />
+    <Content Include="images\99.jpeg" />
+    <Content Include="images\accessories1.jpeg" />
+    <Content Include="images\accessories10.jpeg" />
+    <Content Include="images\accessories11.jpeg" />
+    <Content Include="images\accessories12.jpeg" />
+    <Content Include="images\accessories13.jpeg" />
+    <Content Include="images\accessories14.jpeg" />
+    <Content Include="images\accessories15.jpeg" />
+    <Content Include="images\accessories2.jpeg" />
+    <Content Include="images\accessories3.jpeg" />
+    <Content Include="images\accessories4.jpeg" />
+    <Content Include="images\accessories5.jpeg" />
+    <Content Include="images\accessories6.jpeg" />
+    <Content Include="images\accessories7.jpeg" />
+    <Content Include="images\accessories8.jpeg" />
+    <Content Include="images\accessories9.jpeg" />
+    <Content Include="images\alexander-rotker-l8p1aWZqHvE-unsplash.jpg" />
+    <Content Include="images\alexandre-trouve-LP3HsuFxMxM-unsplash.jpg" />
+    <Content Include="images\andrew-tanglao-tjvURCarBf0-unsplash.jpg" />
+    <Content Include="images\bre-joi-30Eb40OK1Ic-unsplash.jpg" />
+    <Content Include="images\camila-damasio-mWYhrOiAgmA-unsplash.jpg" />
+    <Content Include="images\chuttersnap-wN6kUEqZT_c-unsplash.jpg" />
+    <Content Include="images\clothing-store-984396_1280.jpg" />
+    <Content Include="images\content-pixie-ZB4eQcNqVUs-unsplash.jpg" />
+    <Content Include="images\daniel-xu-__dxSIVAKwY-unsplash.jpg" />
+    <Content Include="images\dominik-martin-b2-fBVrfx0o-unsplash.jpg" />
+    <Content Include="images\eleni-koureas-iHlQwyDbpIQ-unsplash.jpg" />
+    <Content Include="images\emily-gouker-Zx76sbAndc0-unsplash.jpg" />
+    <Content Include="images\fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg" />
+    <Content Include="images\FB_IMG_1517009938868.jpg" />
+    <Content Include="images\FB_IMG_1517009950677.jpg" />
+    <Content Include="images\FB_IMG_1524495871269.jpg" />
+    <Content Include="images\FB_IMG_1524788674446.jpg" />
+    <Content Include="images\FB_IMG_1524788787154.jpg" />
+    <Content Include="images\FB_IMG_1530441846630.jpg" />
+    <Content Include="images\FB_IMG_1530447793269.jpg" />
+    <Content Include="images\FB_IMG_1531759320157.jpg" />
+    <Content Include="images\FB_IMG_1531759340981.jpg" />
+    <Content Include="images\FB_IMG_1535554365435.jpg" />
+    <Content Include="images\FB_IMG_1537706062757.jpg" />
+    <Content Include="images\FB_IMG_1538131625307.jpg" />
+    <Content Include="images\FB_IMG_1538583229329.jpg" />
+    <Content Include="images\FB_IMG_1540559592035.jpg" />
+    <Content Include="images\FB_IMG_1556284706391.jpg" />
+    <Content Include="images\FB_IMG_1556288980059.jpg" />
+    <Content Include="images\FB_IMG_1602367161970.jpg" />
+    <Content Include="images\FB_IMG_1602367166781.jpg" />
+    <Content Include="images\FB_IMG_1602367173444.jpg" />
+    <Content Include="images\FB_IMG_1602367175537.jpg" />
+    <Content Include="images\FB_IMG_1602367197957.jpg" />
+    <Content Include="images\FB_IMG_1602367242913.jpg" />
+    <Content Include="images\FB_IMG_1602367253536.jpg" />
+    <Content Include="images\FB_IMG_1602367258238.jpg" />
+    <Content Include="images\FB_IMG_1602367265174.jpg" />
+    <Content Include="images\FB_IMG_1602367347174.jpg" />
+    <Content Include="images\FB_IMG_1602367358482.jpg" />
+    <Content Include="images\FB_IMG_1602367363109.jpg" />
+    <Content Include="images\FB_IMG_1602367372475.jpg" />
+    <Content Include="images\FB_IMG_1602367375518.jpg" />
+    <Content Include="images\FB_IMG_1602367392798.jpg" />
+    <Content Include="images\FB_IMG_1602367461527.jpg" />
+    <Content Include="images\FB_IMG_1602367480231.jpg" />
+    <Content Include="images\FB_IMG_1602367491117.jpg" />
+    <Content Include="images\FB_IMG_1602367534345.jpg" />
+    <Content Include="images\FB_IMG_1602367568160.jpg" />
+    <Content Include="images\FB_IMG_1602367571586.jpg" />
+    <Content Include="images\FB_IMG_1602367579754.jpg" />
+    <Content Include="images\FB_IMG_1602367642912.jpg" />
+    <Content Include="images\FB_IMG_1602367644821.jpg" />
+    <Content Include="images\FB_IMG_1602367655638.jpg" />
+    <Content Include="images\FB_IMG_1602367661565.jpg" />
+    <Content Include="images\FB_IMG_1602367686677.jpg" />
+    <Content Include="images\FB_IMG_1602367694854.jpg" />
+    <Content Include="images\FB_IMG_1602367776499.jpg" />
+    <Content Include="images\FB_IMG_1602367781511.jpg" />
+    <Content Include="images\FB_IMG_1602367787465.jpg" />
+    <Content Include="images\FB_IMG_1602367825383.jpg" />
+    <Content Include="images\FB_IMG_1602367890454.jpg" />
+    <Content Include="images\FB_IMG_1602367916115.jpg" />
+    <Content Include="images\giovanna-karla-givi--fiB9jZe93w-unsplash.jpg" />
+    <Content Include="images\he-s-her-lobster-nKK32qJheBY-unsplash.jpg" />
+    <Content Include="images\henrie-lord-gati-4ye8LSIByaY-unsplash.jpg" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\IiwMaqa.jpg" />
+    <Content Include="images\image %281%29.jpeg" />
+    <Content Include="images\image %282%29.jpeg" />
+    <Content Include="images\image %283%29.jpeg" />
+    <Content Include="images\image%284%29.jpeg" />
+    <Content Include="images\images %281%29.jpeg" />
+    <Content Include="images\images %2812%29.jpeg" />
+    <Content Include="images\images %282%29.jpeg" />
+    <Content Include="images\images %283%29.jpeg" />
+    <Content Include="images\images %284%29.jpeg" />
+    <Content Include="images\images %285%29.jpeg" />
+    <Content Include="images\images %286%29.jpeg" />
+    <Content Include="images\images %287%29.jpeg" />
+    <Content Include="images\images %288%29.jpeg" />
+    <Content Include="images\images %289%29.jpeg" />
+    <Content Include="images\images%280%29.jpeg" />
+    <Content Include="images\images%285%29.jpeg" />
+    <Content Include="images\images%286%29.jpeg" />
+    <Content Include="images\images.jpeg" />
+    <Content Include="images\imani-bahati-LxVxPA1LOVM-unsplash.jpg" />
+    <Content Include="images\IMG_20200421_201911.jpg" />
+    <Content Include="images\IMG_20200507_022313.jpg" />
+    <Content Include="images\IMG_20200610_224640.jpg" />
+    <Content Include="images\istockphoto-863190232-170667a.jpg" />
+    <Content Include="images\jaclyn-moy-ugZxwLQuZec-unsplash.jpg" />
+    <Content Include="images\jakob-owens-JzJSybPFb3s-unsplash.jpg" />
+    <Content Include="images\javier-reyes-qi2cD5oR_fE-unsplash.jpg" />
+    <Content Include="images\jeshoots-com-n-K52FBRwRY-unsplash.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\maksim-larin-NOpsC3nWTzY-unsplash.jpg" />
+    <Content Include="images\nana-miya-GCDjllzoKLo-unsplash.jpg" />
+    <Content Include="images\nordwood-themes-6V-vJpPzvh8-unsplash.jpg" />
+    <Content Include="images\pat-kwon-EJTjetc8tPs-unsplash.jpg" />
+    <Content Include="images\pexels-photo-1078973.jpeg" />
+    <Content Include="images\pexels-photo-2292953.jpeg" />
+    <Content Include="images\pexels-photo-3302537.jpeg" />
+    <Content Include="images\pexels-photo-3489129.jpeg" />
+    <Content Include="images\pexels-photo-374677.jpeg" />
+    <Content Include="images\pexels-photo-3965543.jpeg" />
+    <Content Include="images\pexels-photo-3965545.jpeg" />
+    <Content Include="images\photo-1555529771-122e5d9f2341.jpeg" />
+    <Content Include="images\photo-1559204260-49087a92c6dd.jpeg" />
+    <Content Include="images\photo-1559842905-635a89deef34.jpeg" />
+    <Content Include="images\photo-1567401893414-76b7b1e5a7a5.jpeg" />
+    <Content Include="images\photo-1567967020310-9b20e78890e6.jpeg" />
+    <Content Include="images\photo-1569705001578-d24d9c95b960.jpeg" />
+    <Content Include="images\photo-1578996437555-1c168c9913d9.jpeg" />
+    <Content Include="images\photo-1595991209266-711c557ac7c4.jpeg" />
+    <Content Include="images\qin-fan-KfqgYzoH3Vk-unsplash.jpg" />
+    <Content Include="images\radek-skrzypczak-WlB8TsI_th0-unsplash.jpg" />
+    <Content Include="images\sam-hojati-MJEvLiNbYRg-unsplash.jpg" />
+    <Content Include="images\Screenshot_2018-03-10-17-29-03-1.png" />
+    <Content Include="images\sebastian-herrmann-mkQsoiskWSg-unsplash.jpg" />
+    <Content Include="images\thom-bradley-WeG2bHKSUo0-unsplash.jpg" />
+    <Content Include="images\unnamed.jpg" />
+    <Content Include="images\vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" />
+    <Content Include="images\VivaCut_video_1602884911162.mp4" />
+    <Content Include="images\إليك-22-طقم-ملابس-رجالي-صيفي-أنيق-صيف-2020-768x432.jpg" />
+    <Content Include="Scripts\all.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -223,6 +403,14 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -257,19 +445,20 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
@@ -279,11 +468,18 @@
       <DependentUpon>202010061219309_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">

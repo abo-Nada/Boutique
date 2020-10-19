@@ -1,31 +1,700 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<section class="homeSec">
+    <!--slider of products-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <p class="carouselTitle">Arashiyama</p>
+                <img src="~/images/110.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <p class="carouselTitle">Arashiyama</p>
+                <img src="~/images/thom-bradley-WeG2bHKSUo0-unsplash.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <p class="carouselTitle">Arashiyama</p>
+                <img src="~/images/33.jpg" alt="third slide">
+            </div>
+            <div class="carousel-item">
+                <p class="carouselTitle">Arashiyama</p>
+                <img src="~/images/jaclyn-moy-ugZxwLQuZec-unsplash.jpg" alt="forth slide">
+            </div>
+            <div class="carousel-item">
+                <p class="carouselTitle">Arashiyama</p>
+                <img src="~/images/77.jpeg" alt="fifth slide">
+            </div>
+            <div class="carousel-item">
+                <p class="carouselTitle">Kiyomizu-dera</p>
+                <img src="~/images/88.jpeg" alt="sixth slide">
+            </div>
+            <div class="carousel-item">
+                <p class="carouselTitle">Kiyomizu-dera</p>
+                <img src="~/images/44.jpg" alt="seventh slide">
+            </div>
+            <div class="carousel-item">
+                <p class="carouselTitle">Kiyomizu-dera</p>
+                <img src="~/images/vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" alt="eigth slide">
+            </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--Show our products-->
+    <!--men's collection-->
+    <div class="menCollection">
+        <h4 class="text-center">Men's Collection</h4>
+        <div class="text-center mt-4">
+            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem.
+            Maecenas tristique sit amet odio sit amet aliquet. Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+        </div>
+        <!--products-->
+        <div class="row mt-5">
+            <div class="col-3">
+                <img src="~/images/dominik-martin-b2-fBVrfx0o-unsplash.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <!--see product Modal-->
+            <div class="modal fade mt-5 profilemodal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-content profileModal">
+                        <div class="modal-body profileimgModal">
+                            <img src="~/images/dominik-martin-b2-fBVrfx0o-unsplash.jpg" alt="men Collection" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                            <button class="adTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367265174.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/IiwMaqa.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/unnamed.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367372475.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/sebastian-herrmann-mkQsoiskWSg-unsplash.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367825383.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="SeeMoreBtn">
+            <button class="btn-lg">See More</button>
+        </div>
+    </div>
+
+
+
+    <!--girls collection-->
+    <div class="girlCollection">
+        <h4 class="text-center">girl's Collection</h4>
+        <div class="text-center mt-4">
+            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem.
+            Maecenas tristique sit amet odio sit amet aliquet. Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+        </div>
+        <!--products-->
+        <div class="row mt-5">
+            <div class="col-3">
+                <img src="~/images/andrew-tanglao-tjvURCarBf0-unsplash.jpg" alt="girls Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <!--see product Modal-->
+            <div class="modal fade mt-5 profilemodal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-content profileModal">
+                        <div class="modal-body profileimgModal">
+                            <img src="~/images/andrew-tanglao-tjvURCarBf0-unsplash.jpg" alt="girls Collection" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                            <button class="adTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367166781.jpg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367175537.jpg" alt="girls Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1517009938868.jpg" alt="girls Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367491117.jpg" alt="girls Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/IMG_20200507_022313.jpg" alt="girls Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367571586.jpg" alt="girls Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367534345.jpg" alt="girls Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="SeeMoreBtn">
+            <button class="btn-lg">See More</button>
+        </div>
+    </div>
+
+    <!--Kids collection-->
+    <div class="kidsCollection">
+        <h4 class="text-center">kid's Collection</h4>
+        <div class="text-center mt-4">
+            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem.
+            Maecenas tristique sit amet odio sit amet aliquet. Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+        </div>
+        <!--products-->
+        <div class="row mt-5">
+            <div class="col-3">
+                <img src="~/images/image(4).jpeg" alt="kid's Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <!--see product Modal-->
+            <div class="modal fade mt-5 profilemodal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-content profileModal">
+                        <div class="modal-body profileimgModal">
+                            <img src="~/images/image (1).jpeg" alt="kid's Collection" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                            <button class="adTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/image (2).jpeg" alt="men Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/image (3).jpeg" alt="kid's Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/Screenshot_2018-03-10-17-29-03-1.png" alt="kid's Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-3">
+                <img src="~/images/pat-kwon-EJTjetc8tPs-unsplash.jpg" alt="kid's Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367781511.jpg" alt="kid's Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367694854.jpg" alt="kid's Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1602367642912.jpg" alt="kid's Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="SeeMoreBtn">
+            <button class="btn-lg">See More</button>
+        </div>
+
+    </div>
+    <!--accessories collection-->
+    <div class="accessories">
+        <h4 class="text-center">accessories Collection</h4>
+        <div class="text-center mt-4">
+            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem.
+            Maecenas tristique sit amet odio sit amet aliquet. Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+        </div>
+        <!--products-->
+        <div class="row mt-5">
+            <div class="col-3">
+                <img src="~/images/accessories4.jpeg" alt="accessories" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <!--see product Modal-->
+            <div class="modal fade mt-5 profilemodal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-content profileModal">
+                        <div class="modal-body profileimgModal">
+                            <img src="~/images/FB_IMG_1540559592035.jpg" alt="accessories" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Close
+                            </button>
+                            <button class="adTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1535554365435.jpg" alt="accessories" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1540559592035.jpg" alt="accessories" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/FB_IMG_1556284706391.jpg" alt="accessories" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-3">
+                <img src="~/images/accessories11.jpeg" alt="accessories " />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/accessories6.jpeg" alt="accessories" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/accessories3.jpeg" alt="accessories" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="~/images/accessories15.jpeg" alt="kid's Collection" />
+                <div class="icons">
+                    <div class="OnHover">
+                        <i class="fa fa-heart heartIcon"></i>
+                        <i class="fa fa-eye ml-3" data-toggle="modal" data-target="#exampleModalLong"></i>
+                    </div>
+                    <button class="addTCart">ADD TO CART <i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="SeeMoreBtn">
+            <button class="btn-lg">See More</button>
+        </div>
+
+    </div>
+    <div class="testMonial">
+        <h4 class="title1">TESTMONIAL</h4>
+        <p>you can see her some opinions of our clients</p>
+        <div id="testSlider" class="container container2">
+            <div id="demo" class="carousel slide " data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item2 active">
+                        <div class="carouselData">
+                            <div class="card">
+                                <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                <div class="card-body">
+                                    <h4>hande</h4>
+                                    <p class="card-text">
+                                        Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                        Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                <div class="card-body">
+                                    <h4>hande</h4>
+                                    <p class="card-text">
+                                        Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                        Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                <div class="card-body">
+                                    <h4>hande</h4>
+                                    <p class="card-text">
+                                        Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                        Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item carousel-item2">
+                            <div class="carouselData">
+                                <div class="card">
+                                    <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                    <div class="card-body">
+                                        <h4>hande</h4>
+                                        <p class="card-text">
+                                            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                            Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                    <div class="card-body">
+                                        <h4>hande</h4>
+                                        <p class="card-text">
+                                            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                            Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                    <div class="card-body">
+                                        <h4>hande</h4>
+                                        <p class="card-text">
+                                            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                            Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item2">
+                            <div class="carouselData">
+                                <div class="card">
+                                    <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                    <div class="card-body">
+                                        <h4>hande</h4>
+                                        <p class="card-text">
+                                            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                            Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                    <div class="card-body">
+                                        <h4>hande</h4>
+                                        <p class="card-text">
+                                            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                            Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img src="~/images/52602548_1229280113916660_2780404043216846848_o.jpg" class="card-img-top" alt="waiting...!">
+                                    <div class="card-body">
+                                        <h4>hande</h4>
+                                        <p class="card-text">
+                                            Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio sit amet aliquet.
+                                            Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut tincidunt lacus.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                <a class="carousel-control-prev" href="#testSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="products-video">
+        <h4>Our Projects</h4>
+        <p>this video displays some of products that is available in our boutique.
+        we wish we are at your best expectations.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <video controls autoplay>
+            <source src="~/images/VivaCut_video_1602884911162.mp4" type="video/mp4" />
+        </video>
+    
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+</section>
+<script>
+    $(document).ready(function () {
+        $(".menCollection div.col-3").animate({ top: "-10px" }, 1000);
+        $(".fa-heart").click(function () {
+            $(this).each(function (i) {
+                if (this.style.color !== "rgb(214, 98, 98)") {
+                    this.style.color = "rgb(214, 98, 98)";
+                } else {
+                    this.style.color = "rgb(240,248,255)";
+                }
+            });
+        });
+       
+   
+    });
+</script>

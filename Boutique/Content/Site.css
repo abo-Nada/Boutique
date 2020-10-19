@@ -1,9 +1,4 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
+﻿/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -22,3 +17,475 @@ select,
 textarea {
     max-width: 280px;
 }
+::selection {
+    background-color: #8b6a9b;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow-x:hidden;
+}
+
+body {
+    background-image: url('../images/clothing-store-984396_1280.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+button{
+    cursor:pointer;
+}
+/*************************** logo nav style**********************************/
+.navbar img {
+    width: 95px;
+}
+
+.navbar {
+    background-color: #050505e0;
+    margin-bottom: 0 !important;
+}
+
+.logoNav input {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.logoNav button {
+    background-color: transparent;
+    color: #6c757d;
+}
+
+.logoNav input:focus {
+    border: transparent;
+    background-color: transparent;
+    box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.logoNav {
+    display: flex !important;
+    justify-content: space-around !important;
+    padding: 10px 0 20px;
+}
+    .cart, .logoNav .search {
+        margin: auto 0;
+    }
+.cart {
+    color: #ccc;
+    padding: 0 106px;
+    cursor:pointer;
+}
+    .cart:hover{
+        color:#efeeee;
+    }
+
+/*************************** list nav style**********************************/
+#navbarNavDropdown {
+    border-top: 1px solid;
+    justify-content: center;
+    
+}
+.dropdown{
+    cursor:pointer;
+}
+.listNav a {
+    color: #ac83c0 !important;
+}
+    .listNav a:hover {
+        color: #774a8e !important;
+    }
+
+.listNav .nav-link {
+    padding-right: 2.5rem !important;
+}
+    /*************************footer******************************/
+footer {
+    clear: both;
+    position: relative;
+    background-color: #050505e0;
+    width: 100%;
+}
+.footer {
+    margin: 0 auto;
+    color: #cacaca;
+    padding: 5px 20px;
+}
+.footer .logoImg{
+    width:100px;
+}
+.products {
+    list-style-type: none;
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    margin-left:30px;
+}
+.products li{
+    display: inline-block;
+    margin-right: 4%;
+}
+.assign{
+    display:inline-block;
+}
+    .assign li a {
+        color: #774a8e;
+    }
+        .assign li a:hover {
+            color: #ac83c0;
+        }
+
+.assign ul li{
+    display:inline-block;
+}
+
+.products a {
+    text-decoration: none;
+    color: #774a8e !important;
+}
+        .products a:hover {
+            text-decoration: none;
+            color: #ac83c0 !important;
+        }
+        .products a.active {
+            color: #ac83c0 !important;
+        }
+        .textFooter {
+            text-align: justify;
+        }
+    .textFooter span {
+        padding: 6px 9px;
+        border-radius: 50%;
+    }
+.textFooter {
+    margin-top: 22px;
+}
+.spans {
+    text-align:center;
+}
+.textFooter .span1{
+    background-color:rgb(17, 17, 158);
+}
+.textFooter .span2{
+    background-color:rgb(107, 187, 197);
+}
+.textFooter .span3{
+    background-color:#4588c2;
+}
+.textFooter .span4{
+    background-color:#383838;
+}
+.textFooter .span5{
+    background-color:#be3737;
+}
+
+.col2Ul{
+    list-style-type: none;
+}
+.col2Ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.col2Ul li a:hover{
+    color: aliceblue;
+}
+.footerDiv2  ul li a{
+    color: #cacaca;
+}
+.footerDiv2 h5 {
+    color: aliceblue;
+    margin-top: 22px;
+}
+footer p {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+/***********************************Home*****************************/
+
+
+.carouselTitle {
+    font-size: 64px;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 1px 2px #000;
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
+}
+   
+.carousel-inner img{
+   width:100%;
+   height:500px;
+}
+/******************************men's collection********************************/
+.menCollection img, .girlCollection img, .kidsCollection img, .accessories  img{
+    width: 100%;
+    height: 275px;
+    border-radius: 50%;
+}
+
+
+.menCollection div.col-3 img, .girlCollection div.col-3 img, .kidsCollection div.col-3 img, .accessories div.col-3 img {
+    animation: fadeInAnime;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeInAnime {
+    0% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+.menCollection div.text-center, .girlCollection div.text-center, .kidsCollection div.text-cente {
+    margin: 0 auto;
+    width: 70%;
+}
+.menCollection, .kidsCollection {
+    background: #cecacad6;
+    padding: 35px 75px;
+}
+    .menCollection div.col-3, .girlCollection div.col-3, .kidsCollection div.col-3, .accessories div.col-3{
+        position: relative;
+    }
+    .menCollection div img, .girlCollection div img, .kidsCollection div img, .accessories div img{
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+.icons {
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+.menCollection div.col-3:hover img, .girlCollection div.col-3:hover img, .kidsCollection div.col-3:hover img, .accessories div.col-3:hover img {
+    opacity: 0.5;
+}
+.menCollection div.col-3:hover .icons, .girlCollection div.col-3:hover .icons, .kidsCollection div.col-3:hover .icons, .accessories div.col-3:hover .icons{
+    opacity: 1;
+}
+
+    .OnHover {
+        position: absolute !important;
+        top: 30% !important;
+        left: 38% !important;
+    }
+    .OnHover .svg-inline--fa {
+      color:aliceblue;
+      font-size:25px;
+      cursor:pointer;
+    }
+.heartIconActive{
+    color:indianred;
+}
+.menCollection .addTCart, .girlCollection .addTCart, .kidsCollection .addTCart, .accessories .addTCart{
+    position: absolute;
+    bottom: 50px !important;
+    left: 82px !important;
+    padding: 10px;
+    border-radius: .3rem;
+    background-color: #8b6a9b;
+    border-color: #8b6a9b;
+    cursor: pointer;
+}
+    .menCollection .addTCart:hover, .girlCollection .addTCart:hover, .kidsCollection .addTCart :hover, .accessories .addTCart :hover{
+        background-color: #816090;
+        border-color: #816090;
+    }
+        /*****************************************see product modal**************************************/
+.modal-footer .adTCart {
+    padding: 6px;
+    border-radius: .3rem;
+    background-color: #8b6a9b;
+    border-color: #8b6a9b;
+    cursor: pointer;
+}
+    .modal-footer .adTCart:hover {
+        background-color: #816090;
+        border-color: #816090;
+    }
+    .profileModal {
+        border-radius: 50% !important;
+        height: 484px;
+        ;
+        margin: 20% auto !important;
+    }
+.modal-title{
+    color:aliceblue;
+}
+
+.profileimgModal {
+    padding: 0 !important;
+
+}
+
+    .profileimgModal img {
+        border-radius: 50% !important;
+        height: 484px;
+        opacity:1 !important;
+      
+    }
+
+    .profileimgModal .img-thumbnail {
+        padding: 0;
+        border: 0;
+    }
+
+.profilemodal .close {
+    color: #f3f0f0 !important;
+    transform: translate(-27px);
+}
+
+.modal-footer {
+    border-top: 0px !important;
+    margin-top:10px;
+}
+/********************************girls collection*******************************/
+.girlCollection, .homeSec .accessories {
+    background-color: #f3f8fbd4;
+    padding: 35px 75px;
+}
+
+
+.SeeMoreBtn {
+    text-align: center;
+}
+    .SeeMoreBtn button {
+        width: 20%;
+        background: #6c4a81;
+        border: 1px solid #6c4a81;
+        color: aliceblue;
+    }
+        .SeeMoreBtn button:hover {
+            background: #816090;
+            border: 1px solid #816090;
+        }
+
+/*************************************home TestMonial*******************************************/
+.testMonial {
+    background-color: rgba(33, 33, 33, 0.85);
+    padding: 50px 0px;
+    color: aliceblue;
+}
+    
+
+    .testMonial > p {
+        text-align: center;
+        margin-bottom:40px;
+    }
+
+.title1{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 150%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+    .title1::after {
+        width: 12%;
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        height: 2px;
+        background: aliceblue;
+        transform: translateX(-50%);
+    }
+.testMonial .carousel-inner div img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin:0 auto;
+}
+
+
+.carouselData {
+    display: flex !important;
+    justify-content: space-around !important;
+}
+.carouselData .card{
+    padding:20px 0px;
+    margin-right:10px;
+    text-align:center;
+    color:black;
+}
+.carousel-indicators {
+    bottom: -46px !important;
+}
+.carousel-control-prev {
+    left: -130px !important;
+}
+.carousel-control-next {
+    right: -130px !important;
+}
+.carousel-indicators li::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.carousel-indicators li::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.carousel-indicators li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.carousel-indicators li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+/********************************products video*******************************/
+.products-video {
+    color: aliceblue;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgba(22, 23, 23, 0.85);
+}
+
+    .products-video p {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .products-video video {
+        width: 80%;
+        height:600px;
+        margin-top: 30px;
+        padding:50px 0px;
+      
+    }
